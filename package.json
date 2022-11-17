@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/KroegerP/jsDiscordBot.git",
   "author": "Peter Kroeger <39171216+KroegerP@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  }
 }
