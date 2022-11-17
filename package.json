@@ -1,0 +1,8 @@
+{
+  "name": "jsDiscordBot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KroegerP/jsDiscordBot.git",
+  "author": "Peter Kroeger <39171216+KroegerP@users.noreply.github.com>",
+  "license": "MIT"
+}
