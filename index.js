@@ -1,6 +1,6 @@
 const { Routes, REST, Client, Events, GatewayIntentBits, Collection } = require('discord.js');
 const path = require('path');
-const fs = require('fs')
+const fs = require('fs');
 require('dotenv').config();
 
 const token = process.env.GUILD_TOKEN;
@@ -12,6 +12,7 @@ const client = new Client({
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
         GatewayIntentBits.GuildMembers,
+		GatewayIntentBits.GuildVoiceStates,
 ] });
 
 // When the client is ready, run this code (only once)
@@ -22,7 +23,7 @@ client.once(Events.ClientReady, c => {
 
 client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
-	console.log(interaction);
+	console.log(interaction.user.username);
 
 	const command = interaction.client.commands.get(interaction.commandName);
 

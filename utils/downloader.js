@@ -28,7 +28,7 @@ var Downloader = function(outputPath='./misc/') {
 
     self.YD.on("error", function(error, data) {
 
-        console.log(data);
+        // console.log(data);
 	
         console.error(error + " on videoId " + data.videoId);
     
@@ -46,13 +46,13 @@ Downloader.prototype.getMP3 = function(track, callback){
 
     var self = this;
 
-    console.log("SELF",self)
-    console.log(track)
+    // console.log("SELF",self)
+    // console.log(track)
     // https://www.youtube.com/watch?v=0opZqh_TprM&ab_channel=LyricalLemonade
     // Register callback
     self.callbacks[track.videoId] = callback;
     // Trigger download 
-    self.YD.download(track.videoId);
+    self.YD.download(track.videoId, title=track.name);
 
 };
 
