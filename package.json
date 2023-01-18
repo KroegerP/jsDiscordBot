@@ -8,9 +8,11 @@
   "dependencies": {
     "@discordjs/opus": "https://github.com/discordjs/opus.git",
     "@discordjs/voice": "^0.13.0",
+    "axios": "^1.2.3",
     "discord.js": "^14.6.0",
     "dotenv": "^16.0.3",
     "libsodium-wrappers": "^0.7.10",
+    "scrape-youtube": "^2.3.2",
     "youtube-mp3-downloader": "https://github.com/ytb2mp3/youtube-mp3-downloader.git",
     "ytdl-core": "^4.11.2"
   },
